@@ -1,5 +1,6 @@
 # Numerical Fragility Scenario Explorer
 
+For an example of how this could be used, see the historical analysis of the case of Enron's collapse at the bottom of this document.
 
 ## Purpose
 
@@ -15,60 +16,13 @@ Instead, it addresses a narrower question:
 The goal is to make structural weakness visible, not to prescribe
 action.
 
-## Disclaimer
+### Disclaimer
 
 This system is for informational purposes only and does not constitute
 advice. Users assume all risk and responsibility for decisions made
 using this system.
 
-## Vulturing: a historical example
-
-A well-documented historical illustration of degrees of freedom being
-consumed comes from the collapse of Enron.
-
-In the late 1990s and into 2000, Enron’s stock price rose dramatically
-and experienced multiple periods of recovery, even as structural
-constraints tightened behind the scenes. The company relied increasingly
-on special purpose entities (SPEs) and off-balance-sheet arrangements to
-obscure liabilities and maintain reported solvency. These mechanisms did
-not resolve underlying constraints; they postponed their recognition.
-
-During this period, capital continued to flow in, confidence was
-periodically restored, and adverse information was repeatedly absorbed
-rather than eliminated. Prices moved up and down rather than
-monotonically anticipating failure.
-
-What mattered was not the exact timing of collapse, but arithmetic. Each
-response to pressure consumed degrees of freedom: greater dependence on
-continued refinancing, increasing sensitivity to confidence shocks, and
-narrower conditions under which the firm could remain viable. Time
-passed between early warning signals and bankruptcy, but recovery
-required increasingly unlikely alignment of external conditions.
-
-A vulturing approach does not require predicting bankruptcy, fraud
-exposure, or legal outcomes. It requires recognizing when degrees of
-freedom are being consumed faster than they can be restored, and when
-apparent stability depends on fragile, non-robust assumptions rather
-than slack.
-
-This gap — between early structural signals and final repricing — is
-where prices may rise, fall, and recover, even as the set of viable
-futures steadily collapses.
-
-## References
-
-- McLean, B., & Elkind, P. (2003). *The Smartest Guys in the Room: The
-  Amazing Rise and Scandalous Fall of Enron*. Portfolio.  
-- U.S. Senate Permanent Subcommittee on Investigations. (2003). *The
-  Role of the Board of Directors in Enron’s Collapse*.  
-- Healy, P. M., & Palepu, K. G. (2003). The fall of Enron. *Journal of
-  Economic Perspectives*, 17(2), 3–26.  
-- Wikipedia contributors. *Enron scandal*.
-  https://en.wikipedia.org/wiki/Enron_scandal  
-- Corporate Finance Institute. *Enron Scandal*.
-  https://corporatefinanceinstitute.com/resources/esg/enron-scandal/
-
-### Core Design
+## Core Design
 
 The app strictly separates:
 
@@ -86,7 +40,7 @@ The app strictly separates:
 This separation keeps the analysis transparent, editable, and ethically
 neutral.
 
-## Core Mathematical Object
+### Core Mathematical Object
 
 The system evaluates **constraint violation under stress**.
 
@@ -192,3 +146,50 @@ This is a numerical exploration tool, not a decision engine.
 If no constraints fail, the system is numerically survivable under the
 given assumptions. If constraints fail, the system is fragile under that
 scenario.
+
+## Vulturing: a historical example
+
+A well-documented historical illustration of degrees of freedom being
+consumed comes from the collapse of Enron.
+
+In the late 1990s and into 2000, Enron’s stock price rose dramatically
+and experienced multiple periods of recovery, even as structural
+constraints tightened behind the scenes. The company relied increasingly
+on special purpose entities (SPEs) and off-balance-sheet arrangements to
+obscure liabilities and maintain reported solvency. These mechanisms did
+not resolve underlying constraints; they postponed their recognition.
+
+During this period, capital continued to flow in, confidence was
+periodically restored, and adverse information was repeatedly absorbed
+rather than eliminated. Prices moved up and down rather than
+monotonically anticipating failure.
+
+What mattered was not the exact timing of collapse, but arithmetic. Each
+response to pressure consumed degrees of freedom: greater dependence on
+continued refinancing, increasing sensitivity to confidence shocks, and
+narrower conditions under which the firm could remain viable. Time
+passed between early warning signals and bankruptcy, but recovery
+required increasingly unlikely alignment of external conditions.
+
+A vulturing approach does not require predicting bankruptcy, fraud
+exposure, or legal outcomes. It requires recognizing when degrees of
+freedom are being consumed faster than they can be restored, and when
+apparent stability depends on fragile, non-robust assumptions rather
+than slack.
+
+This gap — between early structural signals and final repricing — is
+where prices may rise, fall, and recover, even as the set of viable
+futures steadily collapses.
+
+### References
+
+- McLean, B., & Elkind, P. (2003). *The Smartest Guys in the Room: The
+  Amazing Rise and Scandalous Fall of Enron*. Portfolio.  
+- U.S. Senate Permanent Subcommittee on Investigations. (2003). *The
+  Role of the Board of Directors in Enron’s Collapse*.  
+- Healy, P. M., & Palepu, K. G. (2003). The fall of Enron. *Journal of
+  Economic Perspectives*, 17(2), 3–26.  
+- Wikipedia contributors. *Enron scandal*.
+  https://en.wikipedia.org/wiki/Enron_scandal  
+- Corporate Finance Institute. *Enron Scandal*.
+  https://corporatefinanceinstitute.com/resources/esg/enron-scandal/

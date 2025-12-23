@@ -139,11 +139,13 @@ $$
 
 The app evaluates simple, interpretable constraints such as:
 
-- **Solvency** $$
+- **Solvency**
+  $$
   A - L' \ge 0
   $$
 
-- **Liquidity** $$
+- **Liquidity**
+  $$
   C' - D' \ge 0
   $$
 

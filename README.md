@@ -1,6 +1,5 @@
 # Numerical Fragility Scenario Explorer
 
-For an example of how this could be used, see the historical analysis of the case of Enron's collapse at the bottom of this document.
 
 ## Purpose
 
@@ -93,20 +92,18 @@ $$
 
 The app evaluates simple, interpretable constraints such as:
 
-- **Solvency**
-  $$
+- **Solvency** $$
   A - L' \ge 0
   $$
 
-- **Liquidity**
-  $$
+- **Liquidity** $$
   C' - D' \ge 0
   $$
 
 Violations are flagged explicitly. No aggregation, weighting, or
 optimization is performed.
 
-## Scenario Suggestions
+### Scenario Suggestions
 
 The application may suggest default stress ranges (e.g. “test
 liabilities at $1$–$5\times$ reported”), but these are templates, not
@@ -114,7 +111,7 @@ conclusions.
 
 All scenarios remain fully user-controlled.
 
-## Ethical Framing
+### Ethical Framing
 
 This tool supports **salvage analysis**:
 
@@ -127,7 +124,7 @@ This tool supports **salvage analysis**:
 Any downstream interpretation or action is the responsibility of the
 user.
 
-## Limitations
+### Limitations
 
 - The model is intentionally simple.
 - No probabilities are inferred.
@@ -136,7 +133,7 @@ user.
 
 This is a numerical exploration tool, not a decision engine.
 
-## Getting Started
+### Getting Started
 
 1.  Enter baseline quantities.
 2.  Specify a stress scenario.
@@ -181,7 +178,7 @@ This gap — between early structural signals and final repricing — is
 where prices may rise, fall, and recover, even as the set of viable
 futures steadily collapses.
 
-### References
+## References
 
 - McLean, B., & Elkind, P. (2003). *The Smartest Guys in the Room: The
   Amazing Rise and Scandalous Fall of Enron*. Portfolio.  
